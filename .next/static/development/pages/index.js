@@ -9956,7 +9956,7 @@ var PostLink = function PostLink(props) {
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       as: "/p/".concat(props.id),
-      href: "/post?title=".concat(props.title),
+      href: "/".concat(props.page, "?title=").concat(props.title),
       __source: {
         fileName: _jsxFileName,
         lineNumber: 13
@@ -9994,6 +9994,7 @@ var PostLink = function PostLink(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostLink, {
     id: "hello-nextjs",
     title: "Hello Next.js",
+    page: "post",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -10002,6 +10003,7 @@ var PostLink = function PostLink(props) {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostLink, {
     id: "learn-nextjs",
     title: "Learn Next.js is awesome",
+    page: "post",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
@@ -10010,9 +10012,19 @@ var PostLink = function PostLink(props) {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostLink, {
     id: "deploy-nextjs",
     title: "Deploy apps with Zeit",
+    page: "post",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostLink, {
+    id: "batman-tvShow",
+    title: "Batman",
+    page: "batman",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
     },
     __self: this
   })));

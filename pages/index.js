@@ -10,7 +10,7 @@ const PostLink = (props) => (
         //     <p>Hello Next.js</p>
         // </Layout>
         <li>
-            <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
+            <Link as={`/p/${props.id}`} href={`/${props.page}?title=${props.title}`}>
                 <a>{props.title}</a>
             </Link>
         </li>
@@ -20,10 +20,12 @@ const PostLink = (props) => (
     <Layout>
       <h1>My Blog</h1>
       <ul>
-      <PostLink id="hello-nextjs" title="Hello Next.js"/>
-      <PostLink id="learn-nextjs" title="Learn Next.js is awesome"/>
-      <PostLink id="deploy-nextjs" title="Deploy apps with Zeit"/>
+      <PostLink id="hello-nextjs" title="Hello Next.js" page='post'/>
+      <PostLink id="learn-nextjs" title="Learn Next.js is awesome" page='post'/>
+      <PostLink id="deploy-nextjs" title="Deploy apps with Zeit" page='post'/>
+      <PostLink id="batman-tvShow" title="Batman" page='batman'/>
       </ul>
+      
     </Layout>
   )
   
