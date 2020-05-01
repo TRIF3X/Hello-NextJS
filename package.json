@@ -6,7 +6,9 @@
   "scripts": {
     "next": "next",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,8 @@
     "isomorphic-unfetch": "^3.0.0",
     "next": "^7.0.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
-  }
+    "react-dom": "^16.7.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
